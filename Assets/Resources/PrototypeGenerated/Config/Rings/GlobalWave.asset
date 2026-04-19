@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9d8182252168243bf6612cec4eb6dd, type: 3}
+  m_Name: GlobalWave
+  m_EditorClassIdentifier: Assembly-CSharp::CupHeadClone.Prototype.RingVisualPreset
+  edgeAlpha: 1
+  bodyAlpha: 0.54
+  glowAlpha: 0.1
+  trailAlpha: 0.18
+  thicknessScale: 1.2
+  glowWidthScale: 2.5
+  trailInsetScale: 0.42
+  pulseSpeed: 4.8
+  sparkCount: 0
+  sparkSpeed: 0.62
+  sparkScale: 1.08
+  sparkAlpha: 0.68
+  telegraphGlowBoost: 1.08
+  impactFlashBoost: 1.03
+  edgeColor: {r: 0.98, g: 0.8, b: 1, a: 1}
+  bodyColor: {r: 0.88, g: 0.56, b: 1, a: 1}
+  glowColor: {r: 0.52, g: 0.18, b: 1, a: 1}
+  trailColor: {r: 0.82, g: 0.56, b: 1, a: 1}

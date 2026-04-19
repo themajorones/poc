@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ace465727e29a4499c611517a437c58, type: 3}
+  m_Name: crushColumns
+  m_EditorClassIdentifier: Assembly-CSharp::CupHeadClone.Prototype.BossMoveDefinition
+  moveKind: 17
+  displayLabel: CRUSH COLUMNS
+  previewSprite: {fileID: -626287320869173076, guid: 6145478a014151246a98391d39a0f946, type: 3}
+  overrideTiming: 0
+  duration: 1
+  shotCooldown: 0.1
+  notes: 
+  trackingParryOrbWindup: 0.5
+  trackingParryOrbSpeed: 110
+  trackingParryOrbRadius: 30
+  trackingParryOrbLifetime: 6
+  trackingParryOrbTurnRate: 190

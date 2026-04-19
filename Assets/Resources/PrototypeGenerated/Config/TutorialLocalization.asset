@@ -1,0 +1,701 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e597388cfedeb449ad1ec5e0f9669cf, type: 3}
+  m_Name: TutorialLocalization
+  m_EditorClassIdentifier: Assembly-CSharp::CupHeadClone.Prototype.TutorialLocalizationAsset
+  activeLocale: en
+  locales:
+  - localeCode: en
+    displayName: English
+    entries:
+    - key: menu.title
+      value: Parry Shooter
+    - key: menu.subtitle
+      value: Start enters boss rush. Tutorial opens the separate lesson scene.
+    - key: menu.start
+      value: Start
+    - key: menu.tutorial
+      value: Tutorial
+    - key: bossrush.title.start
+      value: Boss Rush
+    - key: bossrush.subtitle.start
+      value: Start the boss rush or open the tutorial first.
+    - key: bossrush.title.win
+      value: Boss Rush Cleared
+    - key: bossrush.subtitle.win
+      value: All bosses defeated. Press Restart to play again.
+    - key: bossrush.title.lose
+      value: Ship Destroyed
+    - key: bossrush.subtitle.lose
+      value: Read the lanes, parry purple shots, then use skill when Rage is full.
+    - key: bossrush.start
+      value: Start Rush
+    - key: bossrush.tutorial
+      value: Tutorial
+    - key: bossrush.restart
+      value: Restart
+    - key: hud.hp_rule
+      value: Lose 1 HP = retry the current lesson
+    - key: hud.footer_hint
+      value: 'Mobile: drag and flick up to parry. Desktop: hold mouse and flick up.
+        Space / E = skill'
+    - key: hud.rage_ready_mobile
+      value: Tap SKILL
+    - key: hud.rage_ready_desktop
+      value: Press Space / E
+    - key: hud.rage_charge
+      value: Parry to charge Rage
+    - key: card.intro.title
+      value: Tutorial Mode
+    - key: card.intro.subtitle
+      value: A separate scene for parry, skill, and stagger lessons.
+    - key: card.intro.primary
+      value: Start Tutorial
+    - key: card.intro.secondary
+      value: Back to Boss Rush
+    - key: card.intro.tip1
+      value: 'Flow: 3 parry lessons -> skill -> boss break -> finish.'
+    - key: card.intro.tip2
+      value: 'Fail rule: taking 1 hit resets the current lesson.'
+    - key: card.intro.tip3
+      value: 'Goal: make each mechanic clear for new players.'
+    - key: card.parry.title
+      value: Parry Basics
+    - key: card.parry.subtitle
+      value: Purple bullets can be parried. Flick up while holding.
+    - key: card.parry.primary
+      value: Enter Lesson 1
+    - key: card.parry.tip1
+      value: 'Keep the mobile feel: move the ship with touch or drag.'
+    - key: card.parry.tip2
+      value: 'The player stays slightly above the finger because of the pointer offset.'
+    - key: card.parry.tip3
+      value: 'The player hitbox is a small circle in the center, while the parry area is a bit larger.'
+    - key: lesson.fail.title
+      value: You were hit
+    - key: lesson.fail.subtitle
+      value: Retry the current lesson.
+    - key: lesson.restart.title
+      value: Retry Lesson
+    - key: lesson.restart.subtitle
+      value: Restart the current lesson.
+    - key: lesson.1.tag
+      value: LESSON 1 - PARRY BASICS
+    - key: lesson.1.objective
+      value: Parry 3 purple bullets.
+    - key: lesson.1.hint
+      value: Send parried bullets into the top zone to count.
+    - key: lesson.1.progress
+      value: 'Progress: {0} / 3'
+    - key: lesson.1.banner.title
+      value: Lesson 1
+    - key: lesson.1.banner.subtitle
+      value: Learn the core parry mechanic.
+    - key: lesson.1.complete.title
+      value: Lesson 1 Clear
+    - key: lesson.1.complete.subtitle
+      value: You parried 3 bullets and sent them upward.
+    - key: lesson.2.tag
+      value: LESSON 2 - PURPLE SHOTS
+    - key: lesson.2.objective
+      value: Parry purple shots to defeat enemies.
+    - key: lesson.2.hint
+      value: Avoid blue shots. Parry purple shots to attack.
+    - key: lesson.2.progress
+      value: 'Enemies left: {0}'
+    - key: lesson.2.banner.title
+      value: Lesson 2
+    - key: lesson.2.banner.subtitle
+      value: Use parry to defeat enemies.
+    - key: lesson.2.complete.title
+      value: Lesson 2 Clear
+    - key: lesson.2.complete.subtitle
+      value: You used parry to defeat the enemies.
+    - key: lesson.3.tag
+      value: LESSON 3 - PARRY TO ATTACK
+    - key: lesson.3.objective
+      value: Use parry to defeat the enemy.
+    - key: lesson.3.hint
+      value: Read the lane, then parry at the right time.
+    - key: lesson.3.progress
+      value: 'Enemy HP: {0} / 3'
+    - key: lesson.3.banner.title
+      value: Lesson 3
+    - key: lesson.3.banner.subtitle
+      value: Use parry to finish the target.
+    - key: lesson.3.complete.title
+      value: Lesson 3 Clear
+    - key: lesson.3.complete.subtitle
+      value: You used parry to win this lesson.
+    - key: card.skill.title
+      value: Skill Basics
+    - key: card.skill.subtitle
+      value: Parry to charge Rage. Use skill when Rage is full.
+    - key: card.skill.primary
+      value: Enter Skill Lesson
+    - key: card.skill.tip1
+      value: 'In the next lesson, you must parry to fill the Rage gauge.'
+    - key: card.skill.tip2
+      value: 'Use skill as soon as the SKILL button lights up.'
+    - key: lesson.4.tag
+      value: LESSON 4 - SKILL
+    - key: lesson.4.objective
+      value: Parry to charge Rage, then use skill.
+    - key: lesson.4.hint
+      value: When Rage is full, press SKILL to break the target.
+    - key: lesson.4.progress
+      value: 'Progress: fill Rage and use skill'
+    - key: lesson.4.banner.title
+      value: Lesson 4
+    - key: lesson.4.banner.subtitle
+      value: Charge Rage, then use skill.
+    - key: lesson.4.complete.title
+      value: Lesson 4 Clear
+    - key: lesson.4.complete.subtitle
+      value: You filled Rage and used the skill.
+    - key: card.break.title
+      value: Stagger / Weak Zone
+    - key: card.break.subtitle
+      value: Stand in the yellow weak zone during stagger to charge Rage fast.
+    - key: card.break.primary
+      value: Enter Break Lesson
+    - key: card.break.tip1
+      value: 'The final lesson is still inside the tutorial-only scene.'
+    - key: card.break.tip2
+      value: 'After finishing the tutorial, the clear next step is returning to boss rush.'
+    - key: lesson.5.tag
+      value: LESSON 5 - STAGGER
+    - key: lesson.5.objective.enter
+      value: Move into the yellow zone.
+    - key: lesson.5.hint.enter
+      value: The boss is staggered. This is the first step.
+    - key: lesson.5.objective.charge
+      value: Stay in the zone to fill Rage.
+    - key: lesson.5.hint.charge
+      value: Hold position until skill is ready.
+    - key: lesson.5.objective.skill
+      value: Rage is full. Use skill to finish.
+    - key: lesson.5.hint.skill
+      value: Press SKILL or Space / E.
+    - key: lesson.5.progress.enter
+      value: 'Progress: 1/3 enter the yellow zone'
+    - key: lesson.5.progress.charge
+      value: 'Progress: 2/3 stay inside to charge Rage'
+    - key: lesson.5.progress.skill
+      value: 'Progress: 3/3 use skill to finish'
+    - key: lesson.5.banner.title
+      value: Lesson 5
+    - key: lesson.5.banner.subtitle
+      value: Use the weak zone, fill Rage, then use skill.
+    - key: lesson.5.rage_full.title
+      value: Rage Full
+    - key: lesson.5.rage_full.subtitle
+      value: Use skill to clear the final lesson.
+    - key: lesson.5.complete.title
+      value: Tutorial Clear
+    - key: lesson.5.complete.subtitle
+      value: You entered the zone, filled Rage, and used skill.
+    - key: card.end.title
+      value: Tutorial Complete
+    - key: card.end.subtitle
+      value: You finished the tutorial flow. Return to Boss Rush or replay the tutorial.
+    - key: card.end.primary
+      value: Back to Boss Rush
+    - key: card.end.secondary
+      value: Replay Tutorial
+    - key: card.end.tip1
+      value: 'The tutorial does not jump into boss rush automatically.'
+    - key: card.end.tip2
+      value: 'The last CTA keeps the choice simple: return to boss rush.'
+    - key: settings.title
+      value: Settings
+    - key: settings.master
+      value: Master Volume
+    - key: settings.music
+      value: Music
+    - key: settings.sfx
+      value: SFX
+    - key: settings.language
+      value: Language
+    - key: settings.language_button
+      value: Change
+    - key: settings.open
+      value: Settings
+    - key: settings.close
+      value: X
+    - key: tutorial.fail.title
+      value: Hit Taken
+    - key: tutorial.fail.subtitle
+      value: Taking 1 hit restarts the current lesson.
+    - key: tutorial.restart.title
+      value: Restart Current Lesson
+    - key: tutorial.restart.subtitle
+      value: R resets the current lesson.
+    - key: lesson1.title
+      value: "LESSON 1 \u2022 BASIC PARRY"
+    - key: lesson1.objective
+      value: Three purple bullets are lined up on screen. Parry all 3, and only count
+        progress when the reflected shot hits the receiver above.
+    - key: lesson1.hint
+      value: Parrying alone is not enough. Each reflected shot must touch the receiver
+        to count.
+    - key: lesson1.progress_label
+      value: Progress
+    - key: lesson1.banner.title
+      value: Lesson 1
+    - key: lesson1.banner.subtitle
+      value: Parry 3 purple bullets and send the reflected shots into the top receiver.
+    - key: lesson1.complete.title
+      value: Lesson 1 Complete
+    - key: lesson1.complete.subtitle
+      value: Only reflected shots that hit the top receiver count.
+    - key: lesson2.title
+      value: "LESSON 2 \u2022 BLUE / PURPLE SHOTS"
+    - key: lesson2.objective
+      value: Every beat has one blue shot and one purple shot. Dodge blue, parry
+        purple, and defeat both enemies.
+    - key: lesson2.hint
+      value: The two enemies fire on the same rhythm and swap bullet colors.
+    - key: lesson2.progress_label
+      value: Enemies Left
+    - key: lesson2.banner.title
+      value: Lesson 2
+    - key: lesson2.banner.subtitle
+      value: 'Each beat: one side fires blue, the other purple, then they swap.'
+    - key: lesson2.complete.title
+      value: Lesson 2 Complete
+    - key: lesson2.complete.subtitle
+      value: You dodged blue shots and parried the purple rhythm correctly.
+    - key: lesson3.title
+      value: "LESSON 3 \u2022 ADVANCED PARRY"
+    - key: lesson3.objective
+      value: The enemy moves to one lane, fires once, then pauses. Read the rhythm
+        and parry the shot.
+    - key: lesson3.hint
+      value: There is always a clear pause after each shot before the enemy changes
+        lane.
+    - key: lesson3.progress_label
+      value: Enemy HP
+    - key: lesson3.banner.title
+      value: Lesson 3
+    - key: lesson3.banner.subtitle
+      value: The enemy rotates through 4 lanes and fires short beats so you can read
+        the pattern.
+    - key: lesson3.complete.title
+      value: Lesson 3 Complete
+    - key: lesson3.complete.subtitle
+      value: You handled the lane pattern and parried consistently.
+    - key: lesson_skill.title
+      value: SKILL
+    - key: lesson_skill.objective
+      value: Parry to fill Rage, then use skill to break the barrier.
+    - key: lesson_skill.hint
+      value: Parrying fills Rage. Use skill as soon as the button lights up.
+    - key: lesson_skill.progress
+      value: 'Progress: fill Rage, then use skill to break the barrier'
+    - key: lesson_skill.banner.title
+      value: Skill
+    - key: lesson_skill.banner.subtitle
+      value: Parrying charges Rage. Use skill when the gauge is full.
+    - key: lesson_skill.complete.title
+      value: Skill Success
+    - key: lesson_skill.complete.subtitle
+      value: You filled Rage and used skill at the right time.
+    - key: lesson_break.title
+      value: BOSS BREAK
+    - key: lesson_break.objective_enter
+      value: Move into the weak zone first.
+    - key: lesson_break.hint_enter
+      value: The boss is already broken. Step 1 is touching the yellow zone.
+    - key: lesson_break.objective_charge
+      value: Stay in the weak zone to fill Rage.
+    - key: lesson_break.hint_charge
+      value: Keep the ship inside the yellow zone until the SKILL button lights up.
+    - key: lesson_break.objective_skill
+      value: Rage is full. Use skill to finish the tutorial.
+    - key: lesson_break.hint_skill
+      value: Full Rage alone is not enough. Press SKILL or Space / E to clear the
+        last lesson.
+    - key: lesson_break.progress_enter
+      value: 'Progress: 1/3 enter the weak zone'
+    - key: lesson_break.progress_charge
+      value: 'Progress: 2/3 stay in the weak zone to fill Rage'
+    - key: lesson_break.progress_skill
+      value: 'Progress: 3/3 use skill to finish the tutorial'
+    - key: lesson_break.banner.title
+      value: Boss Break
+    - key: lesson_break.banner.subtitle
+      value: Enter the weak zone, fill Rage, then use skill to complete the tutorial.
+    - key: lesson_break.rage_full.title
+      value: Rage Full
+    - key: lesson_break.rage_full.subtitle
+      value: Full Rage is not enough. Use skill to clear the last lesson.
+    - key: lesson_break.complete.title
+      value: Tutorial Complete
+    - key: lesson_break.complete.subtitle
+      value: You entered the weak zone, filled Rage, and used skill in the intended
+        flow.
+  - localeCode: vi
+    displayName: "Ti\u1EBFng Vi\u1EC7t"
+    entries:
+    - key: menu.title
+      value: Parry Shooter
+    - key: menu.subtitle
+      value: "B\u1EAFt \u0111\u1EA7u v\xE0o boss rush. Tutorial v\xE0o scene h\u01B0\u1EDBng
+        d\u1EABn ri\xEAng."
+    - key: menu.start
+      value: Start
+    - key: menu.tutorial
+      value: Tutorial
+    - key: bossrush.title.start
+      value: Boss Rush
+    - key: bossrush.subtitle.start
+      value: "B\u1EAFt \u0111\u1EA7u boss rush ho\u1EB7c v\xE0o tutorial \u0111\u1EC3
+        h\u1ECDc c\u01A1 ch\u1EBF."
+    - key: bossrush.title.win
+      value: Boss Rush Cleared
+    - key: bossrush.subtitle.win
+      value: "B\u1EA1n \u0111\xE3 h\u1EA1 t\u1EA5t c\u1EA3 boss. B\u1EA5m Restart
+        \u0111\u1EC3 ch\u01A1i l\u1EA1i."
+    - key: bossrush.title.lose
+      value: Ship Destroyed
+    - key: bossrush.subtitle.lose
+      value: "\u0110\u1ECDc lane k\u1EF9 h\u01A1n, \u01B0u ti\xEAn ph\u1EA3n \u0111\xF2n
+        \u0111\u1EA1n t\xEDm, r\u1ED3i d\xF9ng skill khi Rage \u0111\u1EA7y."
+    - key: bossrush.start
+      value: Start Rush
+    - key: bossrush.tutorial
+      value: Tutorial
+    - key: bossrush.restart
+      value: Restart
+    - key: hud.hp_rule
+      value: "M\u1EA5t 1 HP = h\u1ECDc l\u1EA1i \u0111\xFAng b\xE0i hi\u1EC7n t\u1EA1i"
+    - key: hud.footer_hint
+      value: "Mobile: k\xE9o v\xE0 h\u1EA5t l\xEAn \u0111\u1EC3 ph\u1EA3n \u0111\xF2n.
+        Desktop: gi\u1EEF chu\u1ED9t v\xE0 h\u1EA5t l\xEAn. Space / E = skill"
+    - key: hud.rage_ready_mobile
+      value: "Ch\u1EA1m SKILL"
+    - key: hud.rage_ready_desktop
+      value: "Space / E \u0111\u1EC3 d\xF9ng skill"
+    - key: hud.rage_charge
+      value: "Ph\u1EA3n \u0111\xF2n \u0111\u1EC3 n\u1EA1p Rage"
+    - key: card.intro.title
+      value: "Ch\u1EBF \u0111\u1ED9 h\u01B0\u1EDBng d\u1EABn"
+    - key: card.intro.subtitle
+      value: "Scene ri\xEAng \u0111\u1EC3 d\u1EA1y ph\u1EA3n \u0111\xF2n, skill v\xE0
+        cho\xE1ng."
+    - key: card.intro.primary
+      value: "B\u1EAFt \u0111\u1EA7u tutorial"
+    - key: card.intro.secondary
+      value: "V\u1EC1 Boss Rush"
+    - key: card.parry.title
+      value: "Gi\u1EDBi thi\u1EC7u ph\u1EA3n \u0111\xF2n"
+    - key: card.parry.subtitle
+      value: "\u0110\u1EA1n t\xEDm c\xF3 th\u1EC3 ph\u1EA3n \u0111\xF2n. H\u1EA5t
+        nhanh l\xEAn khi \u0111ang gi\u1EEF."
+    - key: card.parry.primary
+      value: "V\xE0o b\xE0i 1"
+    - key: lesson.fail.title
+      value: "B\u1EA1n \u0111\xE3 tr\xFAng \u0111\xF2n"
+    - key: lesson.fail.subtitle
+      value: "H\u1ECDc l\u1EA1i \u0111\xFAng b\xE0i hi\u1EC7n t\u1EA1i."
+    - key: lesson.restart.title
+      value: "Ch\u01A1i l\u1EA1i b\xE0i"
+    - key: lesson.restart.subtitle
+      value: "B\u1EAFt \u0111\u1EA7u l\u1EA1i b\xE0i hi\u1EC7n t\u1EA1i."
+    - key: lesson.1.tag
+      value: "B\xC0I 1 - GI\u1EDAI THI\u1EC6U PH\u1EA2N \u0110\xD2N"
+    - key: lesson.1.objective
+      value: "Ph\u1EA3n \u0111\xF2n 3 vi\xEAn \u0111\u1EA1n t\xEDm."
+    - key: lesson.1.hint
+      value: "\u0110\u1EA9y vi\xEAn \u0111\u1EA1n \u0111\xE3 ph\u1EA3n \u0111\xF2n
+        l\xEAn v\xF9ng tr\xEAn \u0111\u1EC3 t\xEDnh \u0111i\u1EC3m."
+    - key: lesson.1.progress
+      value: "Ti\u1EBFn tr\xECnh: {0} / 3"
+    - key: lesson.1.banner.title
+      value: "B\xE0i 1"
+    - key: lesson.1.banner.subtitle
+      value: "H\u1ECDc c\u01A1 ch\u1EBF ph\u1EA3n \u0111\xF2n c\u01A1 b\u1EA3n."
+    - key: lesson.1.complete.title
+      value: "Xong b\xE0i 1"
+    - key: lesson.1.complete.subtitle
+      value: "Ph\u1EA3n \u0111\xF2n 3 vi\xEAn \u0111\u1EA1n v\xE0 \u0111\u1EA9y \u0111\u1EA1n
+        l\xEAn tr\xEAn."
+    - key: lesson.2.tag
+      value: "B\xC0I 2 - \u0110\u1EA0N T\xCDM"
+    - key: lesson.2.objective
+      value: "Ph\u1EA3n \u0111\xF2n \u0111\u1EA1n t\xEDm \u0111\u1EC3 h\u1EA1 k\u1EBB
+        \u0111\u1ECBch."
+    - key: lesson.2.hint
+      value: "N\xE9 \u0111\u1EA1n xanh. Ph\u1EA3n \u0111\xF2n \u0111\u1EA1n t\xEDm
+        \u0111\u1EC3 t\u1EA5n c\xF4ng."
+    - key: lesson.2.progress
+      value: "K\u1EBB \u0111\u1ECBch c\xF2n l\u1EA1i: {0}"
+    - key: lesson.2.banner.title
+      value: "B\xE0i 2"
+    - key: lesson.2.banner.subtitle
+      value: "Ph\u1EA3n \u0111\xF2n \u0111\u1EA1n t\xEDm \u0111\u1EC3 \u0111\xE1nh
+        b\u1EA1i k\u1EBB \u0111\u1ECBch."
+    - key: lesson.2.complete.title
+      value: "Xong b\xE0i 2"
+    - key: lesson.2.complete.subtitle
+      value: "B\u1EA1n \u0111\xE3 d\xF9ng ph\u1EA3n \u0111\xF2n \u0111\u1EC3 h\u1EA1
+        k\u1EBB \u0111\u1ECBch."
+    - key: lesson.3.tag
+      value: "B\xC0I 3 - PH\u1EA2N \u0110\xD2N N\xC2NG CAO"
+    - key: lesson.3.objective
+      value: "D\xF9ng ph\u1EA3n \u0111\xF2n \u0111\u1EC3 \u0111\xE1nh b\u1EA1i k\u1EBB
+        \u0111\u1ECBch."
+    - key: lesson.3.hint
+      value: "Canh nh\u1ECBp v\xE0 lane r\u1ED3i ph\u1EA3n \u0111\xF2n \u0111\xFAng
+        l\xFAc."
+    - key: lesson.3.progress
+      value: "HP k\u1EBB \u0111\u1ECBch: {0} / 3"
+    - key: lesson.3.banner.title
+      value: "B\xE0i 3"
+    - key: lesson.3.banner.subtitle
+      value: "D\xF9ng ph\u1EA3n \u0111\xF2n \u0111\u1EC3 k\u1EBFt li\u1EC5u m\u1EE5c
+        ti\xEAu."
+    - key: lesson.3.complete.title
+      value: "Xong b\xE0i 3"
+    - key: lesson.3.complete.subtitle
+      value: "B\u1EA1n \u0111\xE3 d\xF9ng ph\u1EA3n \u0111\xF2n \u0111\u1EC3 th\u1EAFng
+        b\xE0i n\xE0y."
+    - key: card.skill.title
+      value: "Gi\u1EDBi thi\u1EC7u skill"
+    - key: card.skill.subtitle
+      value: "Ph\u1EA3n \u0111\xF2n \u0111\u1EC3 n\u1EA1p Rage. \u0110\u1EA7y Rage
+        r\u1ED3i d\xF9ng skill."
+    - key: card.skill.primary
+      value: "V\xE0o b\xE0i skill"
+    - key: lesson.4.tag
+      value: "B\xC0I 4 - SKILL"
+    - key: lesson.4.objective
+      value: "Ph\u1EA3n \u0111\xF2n \u0111\u1EC3 n\u1EA1p Rage, sau \u0111\xF3 d\xF9ng
+        skill."
+    - key: lesson.4.hint
+      value: "Khi Rage \u0111\u1EA7y, b\u1EA5m SKILL \u0111\u1EC3 ph\xE1 m\u1EE5c
+        ti\xEAu."
+    - key: lesson.4.progress
+      value: "Ti\u1EBFn tr\xECnh: n\u1EA1p \u0111\u1EA7y Rage v\xE0 d\xF9ng skill"
+    - key: lesson.4.banner.title
+      value: "B\xE0i 4"
+    - key: lesson.4.banner.subtitle
+      value: "N\u1EA1p Rage r\u1ED3i d\xF9ng skill."
+    - key: lesson.4.complete.title
+      value: "Xong b\xE0i 4"
+    - key: lesson.4.complete.subtitle
+      value: "B\u1EA1n \u0111\xE3 n\u1EA1p \u0111\u1EA7y Rage v\xE0 d\xF9ng skill."
+    - key: card.break.title
+      value: "Gi\u1EDBi thi\u1EC7u cho\xE1ng"
+    - key: card.break.subtitle
+      value: "Khi boss cho\xE1ng, \u0111\u1EE9ng trong v\xF9ng v\xE0ng \u0111\u1EC3
+        n\u1EA1p Rage nhanh."
+    - key: card.break.primary
+      value: "V\xE0o b\xE0i break"
+    - key: lesson.5.tag
+      value: "B\xC0I 5 - CHO\xC1NG"
+    - key: lesson.5.objective.enter
+      value: "\u0110i v\xE0o v\xF9ng v\xE0ng."
+    - key: lesson.5.hint.enter
+      value: "Boss \u0111ang cho\xE1ng. \u0110\xE2y l\xE0 b\u01B0\u1EDBc \u0111\u1EA7u
+        ti\xEAn."
+    - key: lesson.5.objective.charge
+      value: "\u0110\u1EE9ng trong v\xF9ng v\xE0ng \u0111\u1EC3 n\u1EA1p \u0111\u1EA7y
+        Rage."
+    - key: lesson.5.hint.charge
+      value: "Gi\u1EEF v\u1ECB tr\xED \u0111\u1EBFn khi skill s\xE1ng."
+    - key: lesson.5.objective.skill
+      value: "Rage \u0111\xE3 \u0111\u1EA7y. D\xF9ng skill \u0111\u1EC3 k\u1EBFt
+        th\xFAc."
+    - key: lesson.5.hint.skill
+      value: "B\u1EA5m SKILL ho\u1EB7c Space / E."
+    - key: lesson.5.progress.enter
+      value: "Ti\u1EBFn tr\xECnh: 1/3 v\xE0o v\xF9ng v\xE0ng"
+    - key: lesson.5.progress.charge
+      value: "Ti\u1EBFn tr\xECnh: 2/3 \u0111\u1EE9ng trong v\xF9ng v\xE0ng \u0111\u1EC3
+        n\u1EA1p Rage"
+    - key: lesson.5.progress.skill
+      value: "Ti\u1EBFn tr\xECnh: 3/3 d\xF9ng skill \u0111\u1EC3 ho\xE0n t\u1EA5t"
+    - key: lesson.5.banner.title
+      value: "B\xE0i 5"
+    - key: lesson.5.banner.subtitle
+      value: "D\xF9ng v\xF9ng v\xE0ng, n\u1EA1p Rage v\xE0 d\xF9ng skill."
+    - key: lesson.5.rage_full.title
+      value: "Rage \u0111\xE3 \u0111\u1EA7y"
+    - key: lesson.5.rage_full.subtitle
+      value: "D\xF9ng skill \u0111\u1EC3 qua b\xE0i cu\u1ED1i."
+    - key: lesson.5.complete.title
+      value: Xong tutorial
+    - key: lesson.5.complete.subtitle
+      value: "B\u1EA1n \u0111\xE3 v\xE0o v\xF9ng v\xE0ng, n\u1EA1p \u0111\u1EA7y
+        Rage v\xE0 d\xF9ng skill."
+    - key: card.end.title
+      value: "Ho\xE0n t\u1EA5t tutorial"
+    - key: card.end.subtitle
+      value: "B\u1EA1n \u0111\xE3 \u0111i h\u1EBFt flow tutorial. C\xF3 th\u1EC3
+        quay l\u1EA1i Boss Rush ho\u1EB7c h\u1ECDc l\u1EA1i t\u1EEB \u0111\u1EA7u."
+    - key: card.end.primary
+      value: Back to Boss Rush
+    - key: card.end.secondary
+      value: "Ch\u01A1i l\u1EA1i tutorial"
+    - key: settings.title
+      value: "C\xE0i \u0111\u1EB7t"
+    - key: settings.master
+      value: "\xC2m l\u01B0\u1EE3ng t\u1ED5ng"
+    - key: settings.music
+      value: "Nh\u1EA1c"
+    - key: settings.sfx
+      value: "Hi\u1EC7u \u1EE9ng"
+    - key: settings.language
+      value: "Ng\xF4n ng\u1EEF"
+    - key: settings.language_button
+      value: "\u0110\u1ED5i"
+    - key: settings.open
+      value: "C\xE0i \u0111\u1EB7t"
+    - key: settings.close
+      value: X
+    - key: tutorial.fail.title
+      value: "Tr\xFAng \u0111\xF2n"
+    - key: tutorial.fail.subtitle
+      value: "Tr\xFAng 1 hit n\xEAn reset \u0111\xFAng b\xE0i \u0111ang h\u1ECDc."
+    - key: tutorial.restart.title
+      value: "Reset b\xE0i hi\u1EC7n t\u1EA1i"
+    - key: tutorial.restart.subtitle
+      value: "R reset \u0111\xFAng b\xE0i \u0111ang h\u1ECDc."
+    - key: lesson1.title
+      value: "B\xC0I 1 \u2022 PH\u1EA2N \u0110\xD2N C\u01A0 B\u1EA2N"
+    - key: lesson1.objective
+      value: "C\xF3 3 vi\xEAn \u0111\u1EA1n t\xEDm x\u1EBFp ngang s\u1EB5n tr\xEAn
+        m\xE0n. Ph\u1EA3n \u0111\xF2n \u0111\u1EE7 3 vi\xEAn, v\xE0 ch\u1EC9 \u0111\u01B0\u1EE3c
+        t\xEDnh khi \u0111\u1EA1n ph\u1EA3n ch\u1EA1m receiver ph\xEDa tr\xEAn."
+    - key: lesson1.hint
+      value: "Ph\u1EA3n \u0111\xF2n xong ch\u01B0a t\xEDnh ngay. M\u1ED7i vi\xEAn
+        ph\u1EA3i ph\u1EA3n l\u1EA1i v\xE0 ch\u1EA1m receiver m\u1EDBi \u0111\u01B0\u1EE3c
+        c\u1ED9ng ti\u1EBFn tr\xECnh."
+    - key: lesson1.progress_label
+      value: "Ti\u1EBFn tr\xECnh"
+    - key: lesson1.banner.title
+      value: "B\xE0i 1"
+    - key: lesson1.banner.subtitle
+      value: "Ph\u1EA3n \u0111\xF2n 3 vi\xEAn t\xEDm v\xE0 \u0111\u1EC3 \u0111\u1EA1n
+        ph\u1EA3n ch\u1EA1m receiver ph\xEDa tr\xEAn."
+    - key: lesson1.complete.title
+      value: "B\xE0i 1 ho\xE0n th\xE0nh"
+    - key: lesson1.complete.subtitle
+      value: "\u0110\u1EA1n ph\u1EA3n ph\u1EA3i ch\u1EA1m receiver ph\xEDa tr\xEAn
+        m\u1EDBi \u0111\u01B0\u1EE3c t\xEDnh."
+    - key: lesson2.title
+      value: "B\xC0I 2 \u2022 \u0110\u1EA0N XANH / \u0110\u1EA0N T\xCDM"
+    - key: lesson2.objective
+      value: "C\u1EE9 m\u1ED7i 1 gi\xE2y s\u1EBD c\xF3 c\u1EA3 1 \u0111\u1EA1n xanh
+        v\xE0 1 \u0111\u1EA1n t\xEDm. N\xE9 \u0111\u1EA1n xanh, ph\u1EA3n \u0111\xF2n
+        \u0111\u1EA1n t\xEDm \u0111\u1EC3 h\u1EA1 c\u1EA3 2 enemy."
+    - key: lesson2.hint
+      value: "Hai enemy b\u1EAFn c\xF9ng nh\u1ECBp v\xE0 s\u1EBD \u0111\u1ED5i vai
+        gi\u1EEFa \u0111\u1EA1n xanh v\xE0 \u0111\u1EA1n t\xEDm."
+    - key: lesson2.progress_label
+      value: "Enemy c\xF2n l\u1EA1i"
+    - key: lesson2.banner.title
+      value: "B\xE0i 2"
+    - key: lesson2.banner.subtitle
+      value: "M\u1ED7i nh\u1ECBp: m\u1ED9t b\xEAn xanh, m\u1ED9t b\xEAn t\xEDm, r\u1ED3i
+        \u0111\u1ED5i vai."
+    - key: lesson2.complete.title
+      value: "B\xE0i 2 ho\xE0n th\xE0nh"
+    - key: lesson2.complete.subtitle
+      value: "B\u1EA1n \u0111\xE3 n\xE9 \u0111\u1EA1n xanh v\xE0 ph\u1EA3n \u0111\xF2n
+        \u0111\xFAng nh\u1ECBp \u0111\u1EA1n t\xEDm."
+    - key: lesson3.title
+      value: "B\xC0I 3 \u2022 PH\u1EA2N \u0110\xD2N N\xC2NG CAO"
+    - key: lesson3.objective
+      value: "Enemy s\u1EBD sang 1 lane, b\u1EAFn 1 ph\xE1t r\u1ED3i d\u1EEBng l\u1EA1i.
+        H\xE3y \u0111\xFAng nh\u1ECBp \u0111\u1EC3 ph\u1EA3n \u0111\xF2n b\u1EB1ng
+        parry."
+    - key: lesson3.hint
+      value: "Sau m\u1ED7i ph\xE1t b\u1EAFn s\u1EBD c\xF3 kho\u1EA3ng d\u1EEBng r\xF5
+        r\xE0ng tr\u01B0\u1EDBc khi enemy \u0111\u1ED5i lane ti\u1EBFp."
+    - key: lesson3.progress_label
+      value: "Enemy gi\u1EEFa HP"
+    - key: lesson3.banner.title
+      value: "B\xE0i 3"
+    - key: lesson3.banner.subtitle
+      value: "Enemy \u0111\u1ED5i 4 lane v\xE0 b\u1EAFn t\u1EEBng nh\u1ECBp ng\u1EAFn
+        \u0111\u1EC3 b\u1EA1n \u0111\u1ECDc pattern."
+    - key: lesson3.complete.title
+      value: "B\xE0i 3 ho\xE0n th\xE0nh"
+    - key: lesson3.complete.subtitle
+      value: "B\u1EA1n \u0111\xE3 ph\u1EA3n \u0111\xF2n \u1ED5n trong pattern lane
+        \u0111\u01A1n gi\u1EA3n h\u01A1n."
+    - key: lesson_skill.title
+      value: SKILL
+    - key: lesson_skill.objective
+      value: "Ph\u1EA3n \u0111\xF2n \u0111\u1EC3 n\u1EA1p \u0111\u1EA7y Rage, r\u1ED3i
+        d\xF9ng skill \u0111\u1EC3 ph\xE1 barrier."
+    - key: lesson_skill.hint
+      value: "Ph\u1EA3n \u0111\xF2n s\u1EBD n\u1EA1p Rage. Khi n\xFAt SKILL s\xE1ng,
+        d\xF9ng ngay \u0111\u1EC3 ph\xE1 barrier."
+    - key: lesson_skill.progress
+      value: "Ti\u1EBFn tr\xECnh: n\u1EA1p Rage \u0111\u1EA7y r\u1ED3i d\xF9ng skill
+        \u0111\u1EC3 ph\xE1 barrier"
+    - key: lesson_skill.banner.title
+      value: Skill
+    - key: lesson_skill.banner.subtitle
+      value: "Ph\u1EA3n \u0111\xF2n s\u1EBD n\u1EA1p Rage. D\xF9ng skill khi thanh
+        \u0111\u1EA7y."
+    - key: lesson_skill.complete.title
+      value: "Skill th\xE0nh c\xF4ng"
+    - key: lesson_skill.complete.subtitle
+      value: "B\u1EA1n \u0111\xE3 n\u1EA1p Rage v\xE0 d\xF9ng skill \u0111\xFAng
+        flow."
+    - key: lesson_break.title
+      value: BOSS BREAK
+    - key: lesson_break.objective_enter
+      value: "Di chuy\u1EC3n v\xE0o weak zone tr\u01B0\u1EDBc."
+    - key: lesson_break.hint_enter
+      value: "Boss \u0111\xE3 break s\u1EB5n. B\u01B0\u1EDBc 1 l\xE0 ch\u1EA1m \u0111\xFAng
+        v\xF2ng v\xE0ng."
+    - key: lesson_break.objective_charge
+      value: "\u0110\u1EE9ng trong weak zone \u0111\u1EC3 n\u1EA1p \u0111\u1EA7y
+        Rage."
+    - key: lesson_break.hint_charge
+      value: "Gi\u1EEF ship trong v\xF2ng v\xE0ng \u0111\u1EBFn khi n\xFAt SKILL
+        s\xE1ng."
+    - key: lesson_break.objective_skill
+      value: "Rage \u0111\xE3 \u0111\u1EA7y. D\xF9ng skill \u0111\u1EC3 k\u1EBFt
+        th\xFAc tutorial."
+    - key: lesson_break.hint_skill
+      value: "\u0110\u1EA7y Rage th\xF4i ch\u01B0a \u0111\u1EE7. B\u1EA5m SKILL ho\u1EB7c
+        Space / E \u0111\u1EC3 pass b\xE0i cu\u1ED1i."
+    - key: lesson_break.progress_enter
+      value: "Ti\u1EBFn tr\xECnh: 1/3 v\xE0o weak zone"
+    - key: lesson_break.progress_charge
+      value: "Ti\u1EBFn tr\xECnh: 2/3 gi\u1EEF trong weak zone \u0111\u1EC3 n\u1EA1p
+        \u0111\u1EA7y Rage"
+    - key: lesson_break.progress_skill
+      value: "Ti\u1EBFn tr\xECnh: 3/3 d\xF9ng skill \u0111\u1EC3 ho\xE0n t\u1EA5t
+        tutorial"
+    - key: lesson_break.banner.title
+      value: Boss Break
+    - key: lesson_break.banner.subtitle
+      value: "V\xE0o weak zone, n\u1EA1p \u0111\u1EA7y Rage r\u1ED3i d\xF9ng skill
+        \u0111\u1EC3 ho\xE0n t\u1EA5t tutorial."
+    - key: lesson_break.rage_full.title
+      value: "Rage \u0111\u1EA7y"
+    - key: lesson_break.rage_full.subtitle
+      value: "\u0110\u1EA7y Rage th\xF4i ch\u01B0a \u0111\u1EE7. D\xF9ng skill \u0111\u1EC3
+        pass b\xE0i cu\u1ED1i."
+    - key: lesson_break.complete.title
+      value: "Tutorial ho\xE0n t\u1EA5t"
+    - key: lesson_break.complete.subtitle
+      value: "B\u1EA1n \u0111\xE3 v\xE0o weak zone, n\u1EA1p Rage \u0111\u1EA7y v\xE0
+        d\xF9ng skill \u0111\xFAng flow."

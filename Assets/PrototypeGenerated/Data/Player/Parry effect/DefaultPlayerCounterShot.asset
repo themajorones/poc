@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84daf417945a32d499d5e4b82c4fa11a, type: 3}
+  m_Name: DefaultPlayerCounterShot
+  m_EditorClassIdentifier: Assembly-CSharp::CupHeadClone.Prototype.PlayerCounterShotDefinition
+  shotKind: 0
+  speed: 920
+  damage: 30
+  poiseDamage: 32
+  radius: 8
+  lifetime: 2.2
+  spawnOffset: {x: 0, y: -8}
+  projectileScale: {x: 0.14, y: 0.3, z: 1}
+  travelScale: {x: 0.12, y: 0.3, z: 1}
+  projectileColor: {r: 1, g: 0.78, b: 0.26, a: 1}
+  glowColor: {r: 1, g: 0.78, b: 0.26, a: 0.12}
+  coreColor: {r: 1, g: 0.95, b: 0.74, a: 0.9}
+  counterHitRageGain: 10
+  hitSfx: 8

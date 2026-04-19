@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edbc65873745941419400a011aae9532, type: 3}
+  m_Name: DemoBossRushScenario
+  m_EditorClassIdentifier: Assembly-CSharp::CupHeadClone.Prototype.BossRushScenario
+  encounters:
+  - name: Violet Manta
+    bossPrefab: {fileID: 8548649571122515730, guid: 64584be71bc4e07478747692ee3b2b89, type: 3}
+    hp: 900
+    poise: 118
+    mobility: 2
+    moves:
+    - {fileID: 11400000, guid: 4f9ceb45493b5c840a812aa088112f94, type: 2}
+    - {fileID: 11400000, guid: a84da14a8fa007c4583f4ceac10f329a, type: 2}
+    - {fileID: 11400000, guid: 989afc9e7bd26c74ba6031a04b44afa3, type: 2}
+    - {fileID: 11400000, guid: e705e10417fbc5340837acc7b5239370, type: 2}
+    - {fileID: 11400000, guid: adeac09c5fb172c4db2cd9b306032a00, type: 2}
+    - {fileID: 11400000, guid: f83e0e0466dd28a44925729899fe99f9, type: 2}
+    - {fileID: 11400000, guid: 3b3899945de137e4d800cbc56fab854f, type: 2}
+    - {fileID: 11400000, guid: 762a9ced979ffe1449b21982840d0205, type: 2}
+  - name: Cerulean Halberd
+    bossPrefab: {fileID: 8548649571122515730, guid: 64584be71bc4e07478747692ee3b2b89, type: 3}
+    hp: 1040
+    poise: 132
+    mobility: 3
+    moves:
+    - {fileID: 11400000, guid: 2af9c3d7185cae549b0862bac516dc30, type: 2}
+    - {fileID: 11400000, guid: aeeb2d8e5d92ace449a37c7f7c1ce7a8, type: 2}
+    - {fileID: 11400000, guid: 762a9ced979ffe1449b21982840d0205, type: 2}
+    - {fileID: 11400000, guid: 7fb25feaaf440594d96ab08c465c5f38, type: 2}
+    - {fileID: 11400000, guid: 97be7a0c14bfa5146b70abcc0b35f75d, type: 2}
+    - {fileID: 11400000, guid: 6b28eac12e532dc4a845df8cd60b5b9f, type: 2}
+    - {fileID: 11400000, guid: fe6d2394e50a92541bfeb82c0c10a52b, type: 2}
+    - {fileID: 11400000, guid: 2af9c3d7185cae549b0862bac516dc30, type: 2}
+  - name: Amber Widow
+    bossPrefab: {fileID: 8548649571122515730, guid: 8d39899ed58229942be3749290db0355, type: 3}
+    hp: 1180
+    poise: 146
+    mobility: 0
+    moves:
+    - {fileID: 11400000, guid: e705e10417fbc5340837acc7b5239370, type: 2}
+    - {fileID: 11400000, guid: 7fb25feaaf440594d96ab08c465c5f38, type: 2}
+    - {fileID: 11400000, guid: 8b01daf575ea6d3409c4a00feae0be44, type: 2}
+    - {fileID: 11400000, guid: 719057c29cb8d574fb98901805ecf86c, type: 2}
+    - {fileID: 11400000, guid: adeac09c5fb172c4db2cd9b306032a00, type: 2}
+    - {fileID: 11400000, guid: 97be7a0c14bfa5146b70abcc0b35f75d, type: 2}
+    - {fileID: 11400000, guid: 86a7e1b395015a548b9e097c4b3d07c5, type: 2}
+    - {fileID: 11400000, guid: 9b212867fc18d024a98c6ba7a6c1a32a, type: 2}

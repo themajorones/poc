@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edbc65873745941419400a011aae9532, type: 3}
+  m_Name: DemoBossRushScenario 1
+  m_EditorClassIdentifier: Assembly-CSharp::CupHeadClone.Prototype.BossRushScenario
+  encounters:
+  - name: 
+    bossPrefab: {fileID: 8548649571122515730, guid: 64584be71bc4e07478747692ee3b2b89, type: 3}
+    hp: 800
+    poise: 120
+    mobility: 0
+    moves:
+    - {fileID: 11400000, guid: adeac09c5fb172c4db2cd9b306032a00, type: 2}
+    - {fileID: 11400000, guid: 8b01daf575ea6d3409c4a00feae0be44, type: 2}
+  - name: Amber Widow
+    bossPrefab: {fileID: 8548649571122515730, guid: 8d39899ed58229942be3749290db0355, type: 3}
+    hp: 99999
+    poise: 99999
+    mobility: 0
+    moves:
+    - {fileID: 11400000, guid: adeac09c5fb172c4db2cd9b306032a00, type: 2}

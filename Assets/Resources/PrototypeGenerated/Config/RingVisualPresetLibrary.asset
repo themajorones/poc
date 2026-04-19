@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604c062d79d35404e8fb3df462ccc16b, type: 3}
+  m_Name: RingVisualPresetLibrary
+  m_EditorClassIdentifier: Assembly-CSharp::CupHeadClone.Prototype.RingVisualPresetLibrary
+  defensiveField: {fileID: 11400000, guid: 6989e21f97c9d13428b224f102af2676, type: 2}
+  globalWave: {fileID: 11400000, guid: b6e9142a987db4e44923c01ce13f5e20, type: 2}
+  bossShockwave: {fileID: 11400000, guid: 30d070b03d11c9c448a4f037be58eed2, type: 2}
+  transientImpact: {fileID: 11400000, guid: 1fd2c858df41c174993ea14470e3c36f, type: 2}
+  weakZone: {fileID: 11400000, guid: 9aca7483d78deb54f907260e69cc49f7, type: 2}

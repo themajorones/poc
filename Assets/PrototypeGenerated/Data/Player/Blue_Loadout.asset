@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8073628c8d89ba546a225b010f5f81e4, type: 3}
+  m_Name: Blue_Loadout
+  m_EditorClassIdentifier: Assembly-CSharp::CupHeadClone.Prototype.PlayerLoadoutDefinition
+  primaryShot: {fileID: 11400000, guid: f527b85b5abb0d249b522b75ebc8fa76, type: 2}
+  parryEffect: {fileID: 11400000, guid: 7faab372eb063314a89f4a82cf593be4, type: 2}
+  skill: {fileID: 11400000, guid: eff2fd3d5ed1af5448db6aae99f3b5e4, type: 2}
+  counterShot: {fileID: 11400000, guid: c8008795dbbf21e4086e95228889d746, type: 2}

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84daf417945a32d499d5e4b82c4fa11a, type: 3}
+  m_Name: DefensiveRingParrySpecial
+  m_EditorClassIdentifier: Assembly-CSharp::CupHeadClone.Prototype.PlayerCounterShotDefinition
+  shotKind: 1
+  speed: 920
+  damage: 30
+  poiseDamage: 32
+  radius: 8
+  lifetime: 2.2
+  spawnOffset: {x: 0, y: -8}
+  projectileScale: {x: 0.14, y: 0.3, z: 1}
+  travelScale: {x: 0.12, y: 0.3, z: 1}
+  projectileColor: {r: 0.2588235, g: 0.92295396, b: 1, a: 1}
+  glowColor: {r: 0.25882354, g: 0.92156863, b: 1, a: 0.12}
+  coreColor: {r: 0.7411765, g: 0.9834556, b: 1, a: 0.9}
+  counterHitRageGain: 10
+  hitSfx: 8
+  molotovTravelDistance: 180
+  molotovFireZoneRadius: 42
+  molotovFireZoneDuration: 3
+  molotovTickInterval: 0.5
+  molotovDamagePerTick: 10
+  molotovPoiseDamagePerTick: 4
+  molotovFireZoneColor: {r: 1, g: 0.44, b: 0.08, a: 0.3}
+  molotovFireZoneGlowColor: {r: 1, g: 0.24, b: 0.06, a: 0.52}
+  defensiveRingStartRadius: 22
+  defensiveRingFinalRadius: 70
+  defensiveRingThickness: 10
+  defensiveRingGrowDuration: 0.25
+  defensiveRingHoldDuration: 1
+  defensiveRingFadeDuration: 0.5
+  defensiveRingColor: {r: 0.25882354, g: 0.92156863, b: 1, a: 0.84}
+  maxActiveDefensiveRings: 5

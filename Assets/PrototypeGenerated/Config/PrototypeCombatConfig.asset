@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f116c30ecfb6f48acfdd2b06cc63dd, type: 3}
+  m_Name: PrototypeCombatConfig
+  m_EditorClassIdentifier: Assembly-CSharp::CupHeadClone.Prototype.PrototypeCombatConfig
+  logicalWidth: 450
+  logicalHeight: 800
+  pixelsPerUnit: 100
+  playerPrefab: {fileID: 7815785594232034992, guid: 6cf0c06fd993a004b9c5598fabf97e20, type: 3}
+  playerLoadout: {fileID: 11400000, guid: af217a52011774345bc71ce3ca1f9f72, type: 2}
+  characterRoster: {fileID: 11400000, guid: 5cbfc173a4396ff419c51afb71e1f759, type: 2}
+  tutorialBluePlayerPrefab: {fileID: 5902730894305390177, guid: 6cf0c06fd993a004b9c5598fabf97e20, type: 3}
+  bossTelegraphSprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  player:
+    hitboxRadius: 11
+    spriteRadius: 22
+    parryOuterRadius: 28
+    pointerShipOffsetY: 52
+    maxHp: 3
+    moveLerp: 0.23
+    speedClamp: 18
+    hitInvuln: 1.5
+  autoShot:
+    interval: 0.12
+    speed: 670
+    damage: 3.5
+    poiseDamage: 0.7
+  parry:
+    threshold: 720
+    travelThreshold: 24
+    travelWindow: 0.12
+    burstHold: 0.125
+    burstDistance: 74
+    burstDuration: 0.12
+    activeMinUpSpeed: 120
+    postGrace: 0.25
+    sameTargetRepeatCooldown: 0.75
+    cooldown: 0
+    parryWindow: 0.12
+    successInvuln: 0.5
+    counterBulletSpeed: 920
+    counterDamage: 30
+    counterPoiseDamage: 32
+    rageGain: 18
+    counterHitRageGain: 10
+  boss:
+    contactRadiusX: 68
+    contactRadiusY: 38
+    bossY: 128
+    moveSpeed: 78
+    restTime: 0.62
+    telegraphTime: 0.72
+    breakDuration: 2
+    weakZoneRadius: 42
+    weakZoneRagePerSecond: 46
+    poiseRecoverDelay: 1.4
+    poiseRecoverRate: 26
+  skill:
+    max: 100
+    duration: 1
+    recoveryInvuln: 0.5
+    laserWidth: 18
+    laserDps: 190
+    laserPoiseDps: 30
+    laneHitAllowance: 56
+  patterns:
+    aimedFanCount: 9
+    aimedFanSpeed: 270
+    aimedFanSpread: 1
+  vfx:
+    maxActiveEffects: 96
+    burstCountScale: 0.65
+    afterimageInterval: 0.04
+  pooling:
+    playerProjectilePreload: 64
+    bossProjectilePreload: 180
+    counterProjectilePreload: 24
+    effectPreload: 96
+    hardLimitPerPool: 256
+  bosses:
+  - name: Violet Manta
+    hp: 760
+    poise: 108
+    bossPrefab: {fileID: 0}
+    moveDefinitions:
+    - {fileID: 11400000, guid: 4f9ceb45493b5c840a812aa088112f94, type: 2}
+    - {fileID: 11400000, guid: a84da14a8fa007c4583f4ceac10f329a, type: 2}
+    - {fileID: 11400000, guid: 989afc9e7bd26c74ba6031a04b44afa3, type: 2}
+    - {fileID: 11400000, guid: e705e10417fbc5340837acc7b5239370, type: 2}
+    moveQueue:
+    - aimedFan
+    - staggerWave
+    - offsetRain
+    - laneBarrage
+  - name: Cerulean Halberd
+    hp: 900
+    poise: 118
+    bossPrefab: {fileID: 0}
+    moveDefinitions:
+    - {fileID: 11400000, guid: f83e0e0466dd28a44925729899fe99f9, type: 2}
+    - {fileID: 11400000, guid: 9b212867fc18d024a98c6ba7a6c1a32a, type: 2}
+    - {fileID: 11400000, guid: 4706016214c25cb4d8ce93f52f9a7a4d, type: 2}
+    - {fileID: 11400000, guid: fe6d2394e50a92541bfeb82c0c10a52b, type: 2}
+    moveQueue:
+    - twinLance
+    - sweepBloom
+    - crossBurst
+    - checkerDrop
+  - name: Amber Widow
+    hp: 1040
+    poise: 132
+    bossPrefab: {fileID: 0}
+    moveDefinitions:
+    - {fileID: 11400000, guid: 0d437de68e53fc7489c9ae4ed1278798, type: 2}
+    - {fileID: 11400000, guid: 3b3899945de137e4d800cbc56fab854f, type: 2}
+    - {fileID: 11400000, guid: 6b28eac12e532dc4a845df8cd60b5b9f, type: 2}
+    - {fileID: 11400000, guid: 1fcc1818b12d0da4a8cfb8221522c1d0, type: 2}
+    moveQueue:
+    - pinwheel
+    - sideSnakes
+    - wedgePress
+    - splitCurtain
+  - name: Prism Leviathan
+    hp: 1180
+    poise: 146
+    bossPrefab: {fileID: 0}
+    moveDefinitions:
+    - {fileID: 11400000, guid: 719057c29cb8d574fb98901805ecf86c, type: 2}
+    - {fileID: 11400000, guid: 0326123898e9a4f4e8664bcd669d8c88, type: 2}
+    - {fileID: 11400000, guid: 86a7e1b395015a548b9e097c4b3d07c5, type: 2}
+    - {fileID: 11400000, guid: 83835da540fba50489fc399ba22aa950, type: 2}
+    moveQueue:
+    - cometCurtain
+    - pulseGrid
+    - orbitMinefall
+    - prismFork
+  - name: Eclipse Sovereign
+    hp: 1380
+    poise: 164
+    bossPrefab: {fileID: 0}
+    moveDefinitions:
+    - {fileID: 11400000, guid: 2af9c3d7185cae549b0862bac516dc30, type: 2}
+    - {fileID: 11400000, guid: aeeb2d8e5d92ace449a37c7f7c1ce7a8, type: 2}
+    - {fileID: 11400000, guid: 762a9ced979ffe1449b21982840d0205, type: 2}
+    - {fileID: 11400000, guid: 7fb25feaaf440594d96ab08c465c5f38, type: 2}
+    moveQueue:
+    - crownRain
+    - crushColumns
+    - helixGate
+    - finalConvergence
