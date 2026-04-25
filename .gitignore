@@ -1,0 +1,36 @@
+# Android
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+bin/
+gen/
+build/
+.gradle/
+.DS_Store
+*.iml
+.idea/
+local.properties
+captures/
+
+# Gradle files
+.gradle
+gradle-app.setting
+!gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Build outputs
+*.aar
+*.jar
+*.jks
+
+# Misc
+*.log
+*.swp
+*.swo
+*~
+.classpath
+.project
+.settings/
+*.sublime-workspace
