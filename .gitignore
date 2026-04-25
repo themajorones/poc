@@ -18,6 +18,7 @@ captures/
 .gradle
 gradle-app.setting
 !gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.jar
 gradle-wrapper.properties
 
 # Build outputs
