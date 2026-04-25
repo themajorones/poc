@@ -20,7 +20,7 @@ while [ -h "$PRG" ] ; do
     fi
 done
 SAVED="$(cd "$(dirname "$PRG")" && pwd)"
-APP_HOME="$(cd "$(dirname "$SAVED")" && pwd)"
+APP_HOME="$SAVED"
 APP_NAME="Gradle"
 APP_BASE_NAME=$(basename "$0")
 
