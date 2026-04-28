@@ -28,11 +28,11 @@ MonoBehaviour:
   legacyHitSfx: 8
   hitCueId: CounterHit
   molotovTravelDistance: 380
-  molotovFireZoneRadius: 52
+  molotovFireZoneRadius: 50
   molotovFireZoneDuration: 3
   molotovTickInterval: 0.5
-  molotovDamagePerTick: 10
-  molotovPoiseDamagePerTick: 4
+  molotovDamagePerTick: 7
+  molotovPoiseDamagePerTick: 2
   molotovFireZoneColor: {r: 1, g: 0.44, b: 0.08, a: 0.3}
   molotovFireZoneGlowColor: {r: 1, g: 0.24, b: 0.06, a: 0.52}
   defensiveRingStartRadius: 22

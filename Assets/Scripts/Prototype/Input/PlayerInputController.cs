@@ -107,7 +107,7 @@ namespace CupHeadClone.Prototype
                 _lastPointerTime = Time.unscaledTime;
                 _gestureUpDistance = 0f;
                 _gestureTimer = 0f;
-                ApplyTarget(pointerDown);
+                BeginRelativeControl();
             }
 
             if (!_pointerActive)
@@ -133,7 +133,7 @@ namespace CupHeadClone.Prototype
             var gestureDeltaY = screenDelta.y * logicalUnitsPerScreenY;
             var verticalSpeed = gestureDeltaY / dt;
 
-            ApplyTarget(pointerPosition);
+            ApplyTargetDelta(pointerPosition - _lastPointerPosition);
 
             if (dt > _game.Config.parry.travelWindow)
             {
@@ -181,12 +181,24 @@ namespace CupHeadClone.Prototype
             }
         }
 
-        private void ApplyTarget(Vector2 pointerPosition)
+        private void BeginRelativeControl()
         {
-            var player = _game.Config.player;
-            TargetLogicalPosition = new Vector2(
-                pointerPosition.x,
-                Mathf.Clamp(pointerPosition.y - player.pointerShipOffsetY, 16f, _game.Config.logicalHeight - 30f));
+            if (_game.Player == null || _game.Player.IsBursting)
+            {
+                return;
+            }
+
+            TargetLogicalPosition = ClampTarget(_game.Player.LogicalPosition);
+        }
+
+        private void ApplyTargetDelta(Vector2 logicalDelta)
+        {
+            TargetLogicalPosition = ClampTarget(TargetLogicalPosition + logicalDelta);
+        }
+
+        private Vector2 ClampTarget(Vector2 target)
+        {
+            return _game.References.ClampLogicalPosition(target, 22f, 16f, 30f);
         }
     }
 }

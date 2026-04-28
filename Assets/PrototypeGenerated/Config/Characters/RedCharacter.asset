@@ -17,4 +17,4 @@ MonoBehaviour:
   previewSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   playerPrefab: {fileID: 7815785594232034992, guid: c7faf65215f2bce4fa57713cf2341f6c, type: 3}
   maxHp: 4
-  rageMax: 130
+  rageMax: 50

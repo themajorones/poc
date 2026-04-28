@@ -15,8 +15,8 @@ MonoBehaviour:
   shotKind: 2
   interval: 0.16
   speed: 560
-  damage: 2.6
-  poiseDamage: 0.55
+  damage: 3
+  poiseDamage: 0.1
   radius: 4.5
   lifetime: 1.9
   spawnOffset: {x: 0, y: -18}
@@ -24,7 +24,8 @@ MonoBehaviour:
   projectileColor: {r: 1, g: 0.9, b: 0.18, a: 0.96}
   glowColor: {r: 1, g: 0.84, b: 0.16, a: 0.18}
   coreColor: {r: 1, g: 0.98, b: 0.88, a: 0.94}
-  fireSfx: 6
+  legacyFireSfx: 6
+  fireCueId: PlayerShoot
   spreadPelletCount: 4
   spreadAngleDegrees: 42
   chaserHomingDuration: 0.9

@@ -18,7 +18,6 @@ MonoBehaviour:
     legacyClip: {fileID: 0}
     clips:
     - {fileID: 8300000, guid: 22098da15d2ff384fb4d5a955091fe20, type: 3}
-    - {fileID: 8300000, guid: 5bb7826bcde2bf34aa076736e0d25ac4, type: 3}
     volume: 0.65
     minPitch: 1
     maxPitch: 1
@@ -27,7 +26,7 @@ MonoBehaviour:
     cueId: BossRushMusic
     legacyClip: {fileID: 0}
     clips:
-    - {fileID: 8300000, guid: 6fd0e1efc68cbf74ba116a614baec2ff, type: 3}
+    - {fileID: 8300000, guid: 5bb7826bcde2bf34aa076736e0d25ac4, type: 3}
     volume: 0.72
     minPitch: 1
     maxPitch: 1
