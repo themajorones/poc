@@ -1,0 +1,23 @@
+# ninja log v5
+32	14340	7988301535893896	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	78038b8ed5ff7e40
+125	974	7988301402344322	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	b78dce80fda8f3c2
+975	1425	7988301406629286	C:/Users/huyan/Desktop/GameProject/CupHeadClone/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1131w3rr/obj/arm64-v8a/libswappywrapper.so	83c3f6c6f0bb7753
+70	13707	7988301529626085	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	16586f10d6f3a214
+44	13783	7988301530373317	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	9a39f1561221192a
+11	13651	7988301528956325	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	34dda6ad15fca0ff
+97	13641	7988301528306130	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	9331896a034500d8
+57	13684	7988301529378797	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	e5caedb638ab3252
+111	14415	7988301536672881	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	fb233517093861a9
+83	14151	7988301534059797	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	f3f7ee798bcff931
+14415	14570	7988301538262908	C:/Users/huyan/Desktop/GameProject/CupHeadClone/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1131w3rr/obj/arm64-v8a/libgame.so	d9ccde437a9c5d13
+88	718	7988886655814318	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	b78dce80fda8f3c2
+719	1047	7988886659215207	C:/Users/huyan/Desktop/GameProject/CupHeadClone/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1131w3rr/obj/arm64-v8a/libswappywrapper.so	83c3f6c6f0bb7753
+56	3266	7988886681624176	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	9331896a034500d8
+29	3276	7988886681674709	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	34dda6ad15fca0ff
+38	3317	7988886682169105	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	e5caedb638ab3252
+66	3334	7988886682320780	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	16586f10d6f3a214
+19	3448	7988886683463023	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	9a39f1561221192a
+46	3830	7988886687271733	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	f3f7ee798bcff931
+10	4085	7988886689817064	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	78038b8ed5ff7e40
+77	4094	7988886689877722	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	fb233517093861a9
+4094	4251	7988886691532090	C:/Users/huyan/Desktop/GameProject/CupHeadClone/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1131w3rr/obj/arm64-v8a/libgame.so	d9ccde437a9c5d13
